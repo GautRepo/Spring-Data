@@ -13,5 +13,6 @@ public interface CustomerService {
 	public String removeGivenCust(Iterable<CustomerDto> itdto);
 	public int fetchCustomerCount();
 	public Iterable<CustomerDto> fetchAllCust();
+	public CustomerDto fetchCustById(int id);
 
 }

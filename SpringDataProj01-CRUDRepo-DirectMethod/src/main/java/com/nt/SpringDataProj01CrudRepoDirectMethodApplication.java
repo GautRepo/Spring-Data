@@ -54,7 +54,9 @@ public class SpringDataProj01CrudRepoDirectMethodApplication {
 		
 		//System.out.println(service.fetchCustomerCount());
 		
-		System.out.println(service.fetchAllCust());
+		//System.out.println(service.fetchAllCust());
+		
+		System.out.println(service.fetchCustById(1));
 		
 		((ConfigurableApplicationContext) ctx).close();
 	}

@@ -3,6 +3,7 @@ package com.nt.service;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -84,6 +85,21 @@ public class CustomerServiceImpl implements CustomerService{
 		});
 		
 		return itrDto;
+	}
+	
+	@Override
+	public CustomerDto fetchCustById(int id) {
+		Optional<Customer> optCust;
+		Customer cust = null;
+		CustomerDto dto = new CustomerDto();
+		
+		optCust=repo.findById(id);
+		
+		if(optCust.isPresent()) {
+			cust=optCust.get();
+			BeanUtils.copyProperties(cust, dto);
+		}
+		return dto;
 	}
 	
 
