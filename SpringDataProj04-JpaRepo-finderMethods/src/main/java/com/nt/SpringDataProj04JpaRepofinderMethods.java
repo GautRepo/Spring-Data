@@ -21,7 +21,20 @@ public class SpringDataProj04JpaRepofinderMethods {
 		
 		//repo.findBybAmtLessThan(110).forEach(System.out::println);;
 		
-		repo.findByCnameLike("G%").forEach(System.out::println);
+		//repo.findByCnameLike("G%").forEach(System.out::println);
 		
+		//repo.findByCnameStartsWith("G").forEach(System.out::println);
+		
+		//repo.findByCnameEndingWith("a").forEach(System.out::println);
+		
+		//repo.findByCnameContaining("ya").forEach(System.out::println);
+		
+		//repo.findByCnameNotNull().forEach(System.out::println);
+		
+		//repo.findByCnameLike("______").forEach(System.out::println);
+		
+		//repo.findByCnameLike("___%").forEach(System.out::println);
+		
+		repo.findBybillAmtBetween(50, 1500);
 	}
 }

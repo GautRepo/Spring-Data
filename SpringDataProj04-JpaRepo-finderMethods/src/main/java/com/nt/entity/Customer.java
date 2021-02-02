@@ -31,6 +31,6 @@ public class Customer implements Serializable{
 	
 	
 	@Type(type="double")
-	private Double bAmt;
+	private Double billAmt;
 
 }
