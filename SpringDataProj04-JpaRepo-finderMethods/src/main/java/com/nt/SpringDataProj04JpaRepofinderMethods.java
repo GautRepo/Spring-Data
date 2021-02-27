@@ -35,6 +35,6 @@ public class SpringDataProj04JpaRepofinderMethods {
 		
 		//repo.findByCnameLike("___%").forEach(System.out::println);
 		
-		repo.findBybillAmtBetween(50, 1500);
+		//repo.findBybillAmtBetween(50, 1500);
 	}
 }
